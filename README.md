@@ -1,5 +1,5 @@
 # JayList
-Threadsafe circular dynamic array-based implementation of deque.
+Threadsafe circular dynamic array-based implementation of deque.<hr>
 Author : Jaewan Yun (Jay50@pitt.edu)
 
 
