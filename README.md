@@ -25,9 +25,6 @@ var rowColor = "rowColor";
 var tableTab = "tableTab";
 var activeTableTab = "activeTableTab";
 </script>
-<noscript>
-<div>JavaScript is disabled on your browser.</div>
-</noscript>
 <!-- ========= START OF TOP NAVBAR ======= -->
 <div class="topNav"><a name="navbar.top">
 <!--   -->
