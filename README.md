@@ -5,6 +5,10 @@ Enhanced Blocking Deque.
 Author : Jaewan Yun (Jay50@pitt.edu)
 <hr>
 
+![alt tag](https://github.com/jaewany/JayList/blob/master/pics/Untitled13.png)
+
+Incomplete demo.
+
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <h2 title="Class JayList" class="title">Class JayList&lt;T&gt;</h2>
