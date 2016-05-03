@@ -1,6 +1,6 @@
 # JayList
 <hr>
-Enhanced Blocking Deque.
+Blocking Deque.
 <br>
 Author : Jaewan Yun (Jay50@pitt.edu)
 <hr>
