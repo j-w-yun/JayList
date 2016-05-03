@@ -4,8 +4,6 @@ Enhanced Blocking Deque.
 <hr>
 Author : Jaewan Yun (Jay50@pitt.edu)
 
-
-<!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <h2 title="Class JayList" class="title">Class JayList&lt;T&gt;</h2>
@@ -643,67 +641,3 @@ implements MyDeque&lt;T&gt;</pre>
 </div>
 </div>
 <!-- ========= END OF CLASS DATA ========= -->
-<!-- ======= START OF BOTTOM NAVBAR ====== -->
-<div class="bottomNav"><a name="navbar.bottom">
-<!--   -->
-</a>
-<div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a></div>
-<a name="navbar.bottom.firstrow">
-<!--   -->
-</a>
-<ul class="navList" title="Navigation">
-<li><a href="package-summary.html">Package</a></li>
-<li class="navBarCell1Rev">Class</li>
-<li><a href="package-tree.html">Tree</a></li>
-<li><a href="deprecated-list.html">Deprecated</a></li>
-<li><a href="index-all.html">Index</a></li>
-<li><a href="help-doc.html">Help</a></li>
-</ul>
-</div>
-<div class="subNav">
-<ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
-</ul>
-<ul class="navList">
-<li><a href="index.html?JayList.html" target="_top">Frames</a></li>
-<li><a href="JayList.html" target="_top">No&nbsp;Frames</a></li>
-</ul>
-<ul class="navList" id="allclasses_navbar_bottom">
-<li><a href="allclasses-noframe.html">All&nbsp;Classes</a></li>
-</ul>
-<div>
-<script type="text/javascript"><!--
-  allClassesLink = document.getElementById("allclasses_navbar_bottom");
-  if(window==top) {
-    allClassesLink.style.display = "block";
-  }
-  else {
-    allClassesLink.style.display = "none";
-  }
-  //-->
-</script>
-</div>
-<div>
-<ul class="subNavList">
-<li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
-</ul>
-<ul class="subNavList">
-<li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
-</ul>
-</div>
-<a name="skip.navbar.bottom">
-<!--   -->
-</a></div>
-<!-- ======== END OF BOTTOM NAVBAR ======= -->
-</body>
-</html>
-Status API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help
