@@ -1,8 +1,9 @@
 # JayList
 <hr>
 Enhanced Blocking Deque.
-<hr>
+<br>
 Author : Jaewan Yun (Jay50@pitt.edu)
+<hr>
 
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
