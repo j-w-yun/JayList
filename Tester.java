@@ -115,6 +115,15 @@ public class Tester
 		System.out.println("\tLENGTH : " + list.length());
 		list.showState(DEBUG);
 
+		System.out.println("\n\t**************************boolean isEmpty()**************************\n");
+		for(int j = 0; j < 1; j++)
+		{
+			System.out.println("RETURN : " + list.isEmpty() + "\n");
+			System.out.println(Arrays.toString(list.toArray()) + "\n");
+		}
+		System.out.println("\tLENGTH : " + list.length());
+		list.showState(DEBUG);
+
 		System.out.println("\n\t**************************boolean sort()**************************\n");
 		for(int j = 0; j < 1; j++)
 		{
@@ -142,14 +151,23 @@ public class Tester
 		System.out.println("\tLENGTH : " + list.length());
 		list.showState(DEBUG);
 
+		System.out.println("\n\t**************************boolean isEmpty()**************************\n");
+		for(int j = 0; j < 1; j++)
+		{
+			System.out.println("RETURN : " + list.isEmpty() + "\n");
+			System.out.println(Arrays.toString(list.toArray()) + "\n");
+		}
+		System.out.println("\tLENGTH : " + list.length());
+		list.showState(DEBUG);
+
 		list = null;
 		System.gc();
 
 
 
-		System.out.println("\n\t####################################################################\n");
-		System.out.println("\n\t##########################CONCURRENCY TEST##########################\n");
-		System.out.println("\n\t####################################################################\n\n");
+		System.out.println("\n\t####################################################################");
+		System.out.println("\t##########################CONCURRENCY TEST##########################");
+		System.out.println("\t####################################################################\n\n");
 
 		System.out.println("\n\t****************************SHARED  LIST****************************\n");
 

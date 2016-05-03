@@ -58,8 +58,7 @@ public class JayList<T> implements MyDeque<T>
 
 	/**
 	*	@param capacity The desired capacity of the underlying data structure.
-	*	@throws IllegalArgumentException when the size of the accepted value exceeds a predetermined maximum capacity.
-	*	@throws IllegalArgumentException when the size of the accepted value is less than one.
+	*	@throws IllegalArgumentException when the size of the accepted value exceeds a predetermined maximum capacity or is less than one.
 	*	@since 1.0.0
 	*	@author Jaewan Yun (Jay50@pitt.edu)
 	*/
@@ -273,9 +272,7 @@ public class JayList<T> implements MyDeque<T>
 			throw new IllegalArgumentException();
 
 		if(size < 3)
-		{
 			increaseCapacity(EXPANSION_FACTOR, keyword, -1);
-		}
 
 
 		// DEBUG
@@ -434,6 +431,7 @@ public class JayList<T> implements MyDeque<T>
 
 		if(toReturn == null)
 			throw new NullPointerException();
+
 		return toReturn;
 	}
 
@@ -521,6 +519,7 @@ public class JayList<T> implements MyDeque<T>
 
 		if(toReturn == null)
 			throw new NullPointerException();
+
 		return toReturn;
 	}
 
@@ -628,6 +627,7 @@ public class JayList<T> implements MyDeque<T>
 
 		if(toReturn == null)
 			throw new NullPointerException();
+
 		return toReturn;
 	}
 
@@ -693,6 +693,7 @@ public class JayList<T> implements MyDeque<T>
 
 		if(toReturn == null)
 			throw new NullPointerException();
+
 		return toReturn;
 	}
 
@@ -758,6 +759,7 @@ public class JayList<T> implements MyDeque<T>
 
 		if(toReturn == null)
 			throw new NullPointerException();
+
 		return toReturn;
 	}
 
@@ -831,11 +833,12 @@ public class JayList<T> implements MyDeque<T>
 
 		if(toReturn == null)
 			throw new NullPointerException();
+
 		return toReturn;
 	}
 
 	/**
-	*	Client method needs to ensure synchronization with this.
+	*	All client methods need to ensure synchronization with this.
 	*
 	*	@param factor The multiplicative expansion coefficient.
 	*	@param keyword Used for development.
@@ -872,6 +875,7 @@ public class JayList<T> implements MyDeque<T>
 		// increase capacity.
 		if((int) (capacity * EXPANSION_FACTOR + 1) > MAX_CAPACITY)
 			throw new IllegalStateException();
+
 		synchronized(this.getClass())
 		{
 			concurrentCapacity -= capacity;
@@ -938,7 +942,7 @@ public class JayList<T> implements MyDeque<T>
 	}
 
 	/**
-	*	Client method needs to ensure synchronization with this.
+	*	All client methods need to ensure synchronization with this.
 	*
 	*	@param factor The multiplicative reduction coefficient.
 	*	@throws IllegalArgumentException when capacity cannot increase due to a predetermined maximum capacity.
@@ -1061,7 +1065,7 @@ public class JayList<T> implements MyDeque<T>
 		return setArray(input, input.length);
 	}
 	/**
-	*	Client method needs to ensure synchronization with this.
+	*	All client methods need to ensure synchronization with this.
 	*
 	*	@param input An array used as a template.
 	*	@return true when storage was successful, and false if otherwise.
@@ -1075,9 +1079,7 @@ public class JayList<T> implements MyDeque<T>
 		checkInitialization();
 
 		if(input == null)
-		{
 			return false;
-		}
 
 		if(length + 1 > MAX_CAPACITY)
 			throw new IllegalArgumentException();
@@ -1119,7 +1121,7 @@ public class JayList<T> implements MyDeque<T>
 	}
 
 	/**
-	*	@return A copy of this array.
+	*	@return a copy of this array.
 	*	@throws IllegalStateException when this has not been properly initialized.
 	*	@throws NullPointerException when jayList is null.
 	*	@since 1.0.0
@@ -1139,7 +1141,7 @@ public class JayList<T> implements MyDeque<T>
 
 	/**
 	*	@param toCopy An array used as a template.
-	*	@return A copy of the accepted array.
+	*	@return a copy of the accepted array.
 	*	@throws NullPointerException when the accepted array is null.
 	*	@throws IllegalArgumentException when the size of the accepted array exceeds a predetermined maximum capacity.
 	*	@since 1.0.0
@@ -1150,14 +1152,10 @@ public class JayList<T> implements MyDeque<T>
 		synchronized(this)
 		{
 			if(toCopy == null)
-			{
 				throw new NullPointerException();
-			}
 
 			if(toCopy.length > MAX_CAPACITY)
-			{
 				throw new IllegalArgumentException();
-			}
 
 			// copy the accepted array
 			T[] toReturn = (T[]) new Object[toCopy.length];
@@ -1170,10 +1168,10 @@ public class JayList<T> implements MyDeque<T>
 	}
 
 	/**
-	*	Client method needs to ensure synchronization with this.
+	*	All client methods need to ensure synchronization with this.
 	*
 	*	@param capacity The capacity of the array to be constructed.
-	*	@return Initialized array of T types with the accepted value as its capacity.
+	*	@return initialized array of T types with the accepted value as its capacity.
 	*	@throws IllegalArgumentException when the size of the accepted value exceeds a predetermined maximum capacity.
 	*	@throws IllegalArgumentException when the size of the accepted value is less than one.
 	*	@since 1.0.0
@@ -1182,9 +1180,7 @@ public class JayList<T> implements MyDeque<T>
 	@SuppressWarnings("unchecked") private T[] constructArray(int capacity)
 	{
 		if(capacity > MAX_CAPACITY || capacity < 1)
-		{
 			throw new IllegalArgumentException();
-		}
 
 		// initialize an array of type T
 		T[] toReturn = (T[]) new Object[capacity];
@@ -1195,7 +1191,7 @@ public class JayList<T> implements MyDeque<T>
 	}
 
 	/**
-	*	Client ensures object types are comparable.
+	*	All client methods need to ensure object types are comparable.
 	*
 	*	@return true if sort was successful; false if no values exists.
 	*	@throws UnsupportedOperationException if object types are not comparable.
@@ -1221,7 +1217,7 @@ public class JayList<T> implements MyDeque<T>
 	}
 
 	/**
-	*	@return size The number of elements contained within this data structure.
+	*	@return number of elements contained within this data structure.
 	*	@since 1.0.0
 	*	@author Jaewan Yun (Jay50@pitt.edu)
 	*/
@@ -1231,7 +1227,7 @@ public class JayList<T> implements MyDeque<T>
 	}
 
 	/**
-	*	Client method needs to ensure synchronization with this.
+	*	All client methods need to ensure synchronization with this.
 	*
 	*	@throws IllegalStateException when this has not been properly initialized.
 	*	@since 1.0.0
@@ -1240,27 +1236,21 @@ public class JayList<T> implements MyDeque<T>
 	private void checkInitialization()
 	{
 		if(!initialized)
-		{
 			throw new IllegalStateException();
-		}
 	}
 
 	/**
-	*	Client method needs to ensure synchronization with this.
-	*
 	*	@return true if no elements exist in this data structure.
 	*	@since 1.0.0
 	*	@author Jaewan Yun (Jay50@pitt.edu)
 	*/
-	private boolean isEmpty()
+	public synchronized boolean isEmpty()
 	{
-		if(headCursor == tailIndex)
-			return true;
-		return false;
+		return headCursor == tailIndex;
 	}
 
 	/**
-	*	Client method needs to ensure synchronization with this.
+	*	All client methods need to ensure synchronization with this.
 	*
 	*	@return true if data represented is in full state.
 	*	@since 1.0.0
@@ -1268,9 +1258,7 @@ public class JayList<T> implements MyDeque<T>
 	*/
 	private boolean isFull()
 	{
-		if(((headCursor + 1) % capacity) == tailIndex)
-			return true;
-		return false;
+		 return ((headCursor + 1) % capacity) == tailIndex;
 	}
 
 	/**
@@ -1372,9 +1360,7 @@ public class JayList<T> implements MyDeque<T>
 		System.out.print(toPrint);
 
 		if(skip == 0)
-		{
 			return;
-		}
 
 		for(int j = 0; j < skip; j++)
 		{
