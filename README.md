@@ -4,7 +4,7 @@ Blocking Deque.
 <br>
 Author : Jaewan Yun (Jay50@pitt.edu)
 <br>
-OUT-OF-DATE README : added features
+<div style="background-color:red">OUT-OF-DATE readme : Additional features added. Refer to 1.2.0 change</div>
 <hr>
 
 ![alt tag](https://github.com/jaewany/JayList/blob/master/pics/Untitled13.png)
