@@ -3,6 +3,8 @@
 Blocking Deque.
 <br>
 Author : Jaewan Yun (Jay50@pitt.edu)
+<br>
+OUT-OF-DATE README : added features
 <hr>
 
 ![alt tag](https://github.com/jaewany/JayList/blob/master/pics/Untitled13.png)
