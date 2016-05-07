@@ -1,9 +1,13 @@
 # JayList
 <hr>
-Enhanced Blocking Deque.
+Blocking Deque.
 <br>
 Author : Jaewan Yun (Jay50@pitt.edu)
 <hr>
+
+![alt tag](https://github.com/jaewany/JayList/blob/master/pics/Untitled13.png)
+
+Incomplete demo.
 
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
